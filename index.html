@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPlay</title>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        color: white;
+        /* margin: 0px;
+        padding: 0px; */
+        background: url("imgs/moon-4919501_1920.jpg");
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 34px;
+        left: 20px;
+    }
+
+    .center {
+        /* border: 2px solid red; */
+        display: block;
+        /* text-align: center; */
+        margin: 20px auto;
+        width: 33%;
+    }
+
+    .right {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: fixed;
+        top: 34px;
+        right: 20px;
+
+    }
+
+    .navbar li {
+
+        /* overflow: auto; */
+
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 9px 26px;
+        font-size: 17px;
+
+    }
+
+    .navbar li a:hover {
+        color: rgb(35, 209, 87);
+    }
+
+    .left img {
+        width: 100px;
+    }
+
+    .left div {
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 28px;
+    }
+
+    .right input {
+        border-radius: 10px;
+        text-decoration: none;
+        padding: 4px;
+        margin: 4px;
+        background-color: #1c6b8d80;
+        color: black;
+
+    }
+
+    #search {
+        color: turquoise;
+    }
+
+    .container {
+        /* border: 3px solid purple; */
+        margin: 107px 82px;
+        padding: 40px 17px;
+        width: 33%;
+        border-radius: 15px;
+    }
+
+    .bts {
+        border-radius: 14px;
+        margin: 0px 177px;
+        padding: 6px 7px;
+        font-size: 16px;
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+
+    .bts:hover {
+        background-color: rgb(231, 157, 107);
+    }
+
+    .formgroup input {
+        text-align: center;
+        display: block;
+        margin: 5px auto;
+        padding: 5px;
+        width: 37%;
+        font-size: 13px;
+        border-radius: 8px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    h2 {
+
+        margin: 8px 35px;
+        padding: 7px 46px;
+    }
+
+    .choose label {
+        margin: 25px 124px;
+        padding: 10px 10px;
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+
+    .choose select {
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        margin: 10px 175px;
+        padding: 6px 0px;
+        display: block;
+        border-radius: 10px;
+        width: 26%;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- This is For Logo -->
+
+        <div class="left">
+
+            <img src="imgs/1329-768x591.png" alt="">
+            <div>VPlay</div>
+        </div>
+
+        <!--This For Nvaifation Bar -->
+
+        <div class="center">
+
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Scores</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+
+        </div>
+
+        <!-- This For Buttons/search-->
+
+        <div class="right">
+            <input type="search" name="search" id="search" placeholder="Search">
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Best Sports Website - Let's Vote</h2>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your E-Mail">
+            </div>
+
+            <div class="formgroup">
+                <input type="number" name="" placeholder="Age">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Country">
+            </div>
+
+            <div class="choose">
+                <label for="batter">Best Batsman Of The Decade:</label>
+                <select name="Bestbatter" id="batter">
+                    <option value="VK">Virat Kohli</option>
+                    <option value="RS">Rohit Sharma</option>
+                    <option value="BA">Babar Azam</option>
+                    <option value="JR">Joe Root</option>
+                    <option value="ABD">A'B Deviliers</option>
+                    <option value="KW">Kane Williamson</option>
+                    <br>
+
+                </select>
+
+                <br>
+
+                <button class="bts">Submit Here</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
